@@ -61,9 +61,9 @@ contract AgeurArbitrage {
     IUniswapQuoter internal constant quoterUniswap = IUniswapQuoter(0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6);
     IUniswapRouter internal constant routerUniswap = IUniswapRouter(0xE592427A0AEce92De3Edee1F18E0157C05861564);
     ICurvePool internal constant poolCurve = ICurvePool(0x2fFbCE9099cBed86984286A54e5932414aF4B717);
-    IJarvisPool internal constant poolJarvis = IJarvisPool(0xCbbA8c0645ffb8aA6ec868f6F5858F2b0eAe34DA);
-    IJarvisAggregator internal constant aggregatorJarvis = IJarvisAggregator(0x73366Fe0AA0Ded304479862808e02506FE556a98);
-    address internal constant derivativeJarvis = 0x0Fa1A6b68bE5dD9132A09286a166d75480BE9165;
+    IJarvisPool internal constant poolJarvis = IJarvisPool(0xAd326c253A84e9805559b73A08724e11E49ca651);
+    IJarvisAggregator internal constant aggregatorJarvis = IJarvisAggregator(0x9b88d07B2354eF5f4579690356818e07371c7BeD);
+    address internal constant derivativeJarvis = 0x65a7b4Ff684C2d08c115D55a4B089bf4E92F5003;
     constructor() {
         ageur.approve(address(routerUniswap), type(uint256).max);
         ageur.approve(address(poolCurve), type(uint256).max);
